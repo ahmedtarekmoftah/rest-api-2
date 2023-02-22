@@ -3,6 +3,7 @@ from django.contrib.auth.models import User, Group
 from rest.models import country
 from rest_framework import permissions, generics, authentication
 from .serializers import UserSerializer, GroupSerializer, CountrySerializer
+from .permissions import D7896DjangoModelPermissions
 
 
 class CountryDetailAPIView(generics.RetrieveAPIView):
@@ -19,7 +20,7 @@ country_detail_view = CountryDetailAPIView.as_view()
 class CountryListCreateAPIView(generics.ListCreateAPIView):
     queryset = country.objects.all()
     serializer_class = CountrySerializer
-    permission_classes = [permissions.DjangoModelPermissions]
+    permission_classes = [D7896DjangoModelPermissions]
     authentication_classes = [authentication.SessionAuthentication,
                               authentication.TokenAuthentication]
 
