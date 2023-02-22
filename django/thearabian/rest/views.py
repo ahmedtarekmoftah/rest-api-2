@@ -19,7 +19,7 @@ country_detail_view = CountryDetailAPIView.as_view()
 class CountryListCreateAPIView(generics.ListCreateAPIView):
     queryset = country.objects.all()
     serializer_class = CountrySerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.DjangoModelPermissions]
     authentication_classes = [authentication.SessionAuthentication,
                               authentication.TokenAuthentication]
 
