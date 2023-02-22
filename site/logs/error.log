@@ -1,0 +1,21 @@
+[Wed Feb 22 07:42:13.458641 2023] [authz_core:error] [pid 9415:tid 139697394497280] [client 172.21.160.1:52197] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.459163 2023] [authz_core:error] [pid 9415:tid 139697386104576] [client 172.21.160.1:52198] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.462560 2023] [authz_core:error] [pid 9414:tid 139697402889984] [client 172.21.160.1:52200] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.466178 2023] [authz_core:error] [pid 9415:tid 139697377711872] [client 172.21.160.1:52202] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.466489 2023] [authz_core:error] [pid 9415:tid 139697032525568] [client 172.21.160.1:52197] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.466883 2023] [authz_core:error] [pid 9415:tid 139697024132864] [client 172.21.160.1:52198] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.466921 2023] [authz_core:error] [pid 9414:tid 139697386104576] [client 172.21.160.1:52203] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.469853 2023] [authz_core:error] [pid 9414:tid 139697377711872] [client 172.21.160.1:52200] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.471764 2023] [authz_core:error] [pid 9415:tid 139697015740160] [client 172.21.160.1:52197] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.471821 2023] [authz_core:error] [pid 9415:tid 139697007347456] [client 172.21.160.1:52202] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.472071 2023] [authz_core:error] [pid 9414:tid 139697166743296] [client 172.21.160.1:52203] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.472487 2023] [authz_core:error] [pid 9415:tid 139696998954752] [client 172.21.160.1:52198] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.481542 2023] [authz_core:error] [pid 9415:tid 139696990562048] [client 172.21.160.1:52198] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.483879 2023] [authz_core:error] [pid 9415:tid 139696982169344] [client 172.21.160.1:52198] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 07:42:13.485981 2023] [authz_core:error] [pid 9414:tid 139697158350592] [client 172.21.160.1:52201] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/admin/auth/user/
+[Wed Feb 22 05:42:13.589560 2023] [wsgi:error] [pid 9413:tid 139697394497280] [remote 172.21.160.1:52201] Not Found: /favicon.ico
+[Wed Feb 22 07:42:20.822547 2023] [authz_core:error] [pid 9414:tid 139697116387072] [client 172.21.160.1:52204] AH01630: client denied by server configuration: /thearabian/site/public/static, referer: http://172.21.161.19/
+Exception ignored in: <bound method BaseEventLoop.__del__ of <_UnixSelectorEventLoop running=False closed=False debug=False>>
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 526, in __del__
+NameError: name 'ResourceWarning' is not defined
