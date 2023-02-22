@@ -9,7 +9,7 @@ from rest_framework.permissions import DjangoModelPermissions
 class CountryDetailAPIView(generics.RetrieveAPIView):
     queryset = country.objects.all()
     serializer_class = CountrySerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.AllowAny]
     authentication_classes = [authentication.SessionAuthentication,
                               authentication.TokenAuthentication]
 
@@ -20,7 +20,7 @@ country_detail_view = CountryDetailAPIView.as_view()
 class CountryListCreateAPIView(generics.ListCreateAPIView):
     queryset = country.objects.all()
     serializer_class = CountrySerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.AllowAny]
     authentication_classes = [authentication.SessionAuthentication,
                               authentication.TokenAuthentication]
 
