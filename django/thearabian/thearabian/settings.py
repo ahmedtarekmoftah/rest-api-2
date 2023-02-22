@@ -75,8 +75,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'thearabian.wsgi.application'
 CORS_ALLOWED_ORIGINS = [
-    'https://localhost:3000/',
-    'http://localhost:3000/',
+    'https://localhost/',
+    'http://localhost/',
 ]
 
 # Database
