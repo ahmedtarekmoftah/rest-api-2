@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User, Group
-from main.models import country
+from rest.models import country
 from rest_framework import permissions, generics, authentication
 from .serializers import UserSerializer, GroupSerializer, CountrySerializer
 
