@@ -77,6 +77,8 @@ WSGI_APPLICATION = 'thearabian.wsgi.application'
 CORS_ALLOWED_ORIGINS = [
 
     "http://localhost:3000",
+    "https://localhost:3000",
+
 
 ]
 
