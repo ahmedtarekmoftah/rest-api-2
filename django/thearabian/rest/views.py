@@ -8,7 +8,7 @@ from .serializers import UserSerializer, GroupSerializer, CountrySerializer
 class CountryDetailAPIView(generics.RetrieveAPIView):
     queryset = country.objects.all()
     serializer_class = CountrySerializer
-    permissions_classes = [permissions.IsAdminUser]
+    permissions_classes = [permissions.IsAuthenticated]
     authentication_classes = [authentication.SessionAuthentication,
                               authentication.TokenAuthentication]
 
@@ -19,7 +19,7 @@ country_detail_view = CountryDetailAPIView.as_view()
 class CountryListCreateAPIView(generics.ListCreateAPIView):
     queryset = country.objects.all()
     serializer_class = CountrySerializer
-    permissions_classes = [permissions.IsAdminUser]
+    permissions_classes = [permissions.IsAuthenticated]
     authentication_classes = [authentication.SessionAuthentication,
                               authentication.TokenAuthentication]
 
@@ -30,7 +30,7 @@ country_list_create_view = CountryListCreateAPIView.as_view()
 class CountryUpdateAPIView(generics.UpdateAPIView):
     queryset = country.objects.all()
     serializer_class = CountrySerializer
-    permissions_classes = [permissions.IsAdminUser]
+    permissions_classes = [permissions.IsAuthenticated]
     authentication_classes = [authentication.SessionAuthentication,
                               authentication.TokenAuthentication]
 
