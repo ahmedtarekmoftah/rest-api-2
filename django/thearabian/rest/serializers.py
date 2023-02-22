@@ -1,5 +1,5 @@
 from django.contrib.auth.models import User, Group
-from .models import country
+from rest.models import country
 from rest_framework import serializers
 
 
