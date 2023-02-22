@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest',
     'rest_framework',
+    'rest_framework.authtoken',
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -49,6 +51,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
 ]
 
 ROOT_URLCONF = 'thearabian.urls'
@@ -70,7 +74,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'thearabian.wsgi.application'
-
+CORS_ALLOWED_ORIGINS = [
+    'https://localhost:3000/',
+    'http://localhost:3000/',
+]
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
