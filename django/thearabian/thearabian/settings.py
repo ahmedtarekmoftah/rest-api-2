@@ -74,13 +74,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'thearabian.wsgi.application'
-CORS_ALLOWED_ORIGINS = [
-
-    "http://localhost:3000",
-    "https://localhost:3000",
-
-
-]
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
