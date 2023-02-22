@@ -21,8 +21,7 @@ class CountryListCreateAPIView(generics.ListCreateAPIView):
     queryset = country.objects.all()
     serializer_class = CountrySerializer
     permission_classes = [permissions.IsAuthenticated]
-    authentication_classes = [authentication.SessionAuthentication,
-                              authentication.TokenAuthentication]
+    authentication_classes = [authentication.TokenAuthentication]
 
 
 country_list_create_view = CountryListCreateAPIView.as_view()
