@@ -22,7 +22,7 @@ class CountryListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = CountrySerializer
     permission_classes = [permissions.IsAuthenticated]
     authentication_classes = [
-        authentication.JWTAuthentication, authentication.SessionAuthentication,
+        authentication.SessionAuthentication,
         authentication.TokenAuthentication]
 
 
