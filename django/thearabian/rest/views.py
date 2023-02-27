@@ -4,6 +4,7 @@ from rest.models import country
 from rest_framework import permissions, generics, authentication
 from .serializers import UserSerializer, GroupSerializer, CountrySerializer
 from rest_framework.permissions import DjangoModelPermissions
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 
 class CountryDetailAPIView(generics.RetrieveAPIView):
@@ -22,6 +23,7 @@ class CountryListCreateAPIView(generics.ListCreateAPIView):
     serializer_class = CountrySerializer
     permission_classes = [permissions.IsAuthenticated]
     authentication_classes = [
+        JWTAuthentication,
         authentication.SessionAuthentication,
         authentication.TokenAuthentication]
 
