@@ -51,3 +51,16 @@ class CountryDestroyAPIView(generics.DestroyAPIView):
 
 
 country_destroy_view = CountryDestroyAPIView.as_view()
+
+
+class UserListCreateAPIView(generics.ListCreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    permission_classes = [permissions.AllowAny]
+    authentication_classes = [
+        JWTAuthentication,
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication]
+
+
+User_list_create_view = UserListCreateAPIView.as_view()
